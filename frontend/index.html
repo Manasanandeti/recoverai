@@ -201,7 +201,7 @@
             try {
 
                 const response = await fetch(
-                    "http://127.0.0.1:8000/dashboard"
+                    "/dashboard"
                 );
 
                 const data = await response.json();
@@ -242,7 +242,7 @@
         async function executeRecovery() {
     try {
         const response = await fetch(
-            "http://127.0.0.1:8000/recover?transaction_id=1",
+            "/recover?transaction_id=1"
             {
                 method: "POST"
             }
@@ -272,7 +272,7 @@
 async function loadAuditLogs() {
     try {
         const response = await fetch(
-            "http://127.0.0.1:8000/audit-logs"
+            "/audit-logs"
         );
 
         const data = await response.json();
